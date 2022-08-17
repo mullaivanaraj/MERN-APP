@@ -8,6 +8,7 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
+import chat from '../messenger.png';
 import { useEffect } from "react";
 import { useHistory } from "react-router";
 import Login from "../components/Authentication/Login";
@@ -22,6 +23,8 @@ function Homepage() {
   //   if (user) history.push("/chats");
   // }, [history]);
 
+
+
   return (
     <Container maxW="xl" centerContent>
       <Box
@@ -35,8 +38,9 @@ function Homepage() {
         borderWidth="1px"
       >
         <Text fontSize="4xl" fontFamily="Work sans">
-          My-Chat
+          My-Chat 
         </Text>
+        <img src={chat} alt="messenger"  className="logo"/>
       </Box>
       <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
         <Tabs isFitted variant="soft-rounded">
