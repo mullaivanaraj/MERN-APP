@@ -6,15 +6,17 @@ import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import { BrowserRouter } from "react-router-dom";
+import ChatProvider from "./Context/ChatProvider";
 
 ReactDOM.render(
-  <ChakraProvider>
-    <BrowserRouter>
-     
-        <App />
-     
-    </BrowserRouter>
-  </ChakraProvider>,
+<ChatProvider>
+  <BrowserRouter>
+    <ChakraProvider>
+          <App />
+    </ChakraProvider>    
+  </BrowserRouter>
+</ChatProvider>,
+
   document.getElementById("root")
 );
 

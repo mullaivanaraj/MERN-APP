@@ -15,13 +15,13 @@ import Login from "../components/Authentication/Login";
 import Signup from "../components/Authentication/Signup";
 
 function Homepage() {
-  // const history = useHistory();
+  const history = useHistory();
 
-  // useEffect(() => {
-  //   const user = JSON.parse(localStorage.getItem("userInfo"));
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("userInfo"));
 
-  //   if (user) history.push("/chats");
-  // }, [history]);
+    if (user) history.push("/chats");
+  }, [history]);
 
 
 
